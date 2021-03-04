@@ -1,19 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <header>
+      <nav
+        class="navbar fixed-top navbar-light"
+        style="background-color: #ffffff"
+      >
+        <h2 class="text-dark h2">
+          <a class="navbar-brand" href="#" >
+            <img
+              src="https://yt3.ggpht.com/ytc/AAUvwnhTEa6kEyqgSvL3wMaMbUDZtyHvhXehJppDCeOGUCI=s900-c-k-c0x00ffffff-no-rj"
+              width="75"
+              height="75"
+              alt=""
+              loading="lazy"
+            /> </a
+          >Space Weather Database Of Notifications, Knowledge, Information
+          (DONKI)
+        </h2>
+      </nav>
+    </header><br>
+    <Axios />
+    <footer>
+      <nav class="navbar navbar-light">
+        <h2 class="text-dark h2">
+          <a class="navbar-brand" href="https://www.nasa.gov/" target="_blank"> 
+            <img
+              src="https://lh3.googleusercontent.com/-9SbvMHKLu_o/UdPLXZmCFWI/AAAAAAAAB1E/ncgeI6ECwvE/s400/NASA-logo_53.jpg"
+              width="60"
+              height="50"
+              alt=""
+              loading="lazy"
+            />
+          </a>
+        </h2>
+      </nav>
+    </footer>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Axios from "./components/axios.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Axios,
+  },
+};
 </script>
 
 <style>
@@ -23,6 +56,19 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
+  width: auto;
+  height: auto;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bmFzYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  margin-top: 100px;
+  border-radius: 10px;
+}
+header {
+  margin-bottom: 15vh;
+}
+footer {
+  margin-top: 15vh;
+  background-image: url("https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixid=MXwxMjA3fDB8MHxzZWFyY2h8MXx8bmFzYXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80");
+  
+
 }
 </style>
